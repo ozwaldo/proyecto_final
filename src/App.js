@@ -25,12 +25,7 @@ function App() {
 
         <ListarContext.Provider value={{ listadoState, setListadoState }}>            
 
-                    <RouterPrincipal />
-
-                    
-
-                    {/*Contenido principal*/}
-
+                    <RouterPrincipal />            
                    
         </ListarContext.Provider>
     );

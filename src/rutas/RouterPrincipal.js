@@ -1,6 +1,8 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { Listado } from '../componentes/Listado';
+// import { AgregarPost } from '../paginas/AgregarPost';
+import { Blog } from '../paginas/Blog';
 // import { Articulos } from '../paginas/Articulos';
 // import { Blog } from '../paginas/Blog';
 // import { Contacto } from '../paginas/Contacto';
@@ -8,10 +10,10 @@ import { Listado } from '../componentes/Listado';
 import { Layout } from '../paginas/Layout';
 // import { Login } from '../paginas/Login';
 import { NoPage } from '../paginas/NoPage';
-import { AgregarArticulo } from '../paginas/panel/AgregarArticulo';
+// import { AgregarArticulo } from '../paginas/panel/AgregarArticulo';
 // import { Gestion } from '../paginas/panel/Gestion';
-import { InicioPanel } from '../paginas/panel/InicioPanel';
-import { PanelControl } from '../paginas/PanelControl';
+// import { InicioPanel } from '../paginas/panel/InicioPanel';
+// import { PanelControl } from '../paginas/PanelControl';
 import { Usuario } from '../paginas/Usuario';
 
 
@@ -24,14 +26,11 @@ export const RouterPrincipal = () => {
                     {/* <Route path='blogs' element={<Blog />} /> */}
                     {/* <Route path='articulos' element={<Articulos />} /> */}
                     {/* <Route path='contacto' element={<Contacto />} /> */}
-                    <Route path='usuario/:nombre' element={<Usuario />} />                    
+                    <Route path='blog/' element={<Blog />} /> 
+                    <Route path='usuario/:nombre' element={<Usuario />} />                                       
                     <Route path='usuario/' element={<Usuario />} />
-                    <Route path='panel/' element={<PanelControl />}>
-                        <Route index element={<InicioPanel/>} />
-                        <Route path='iniciopanel' element={<InicioPanel />} />
-                        {/* <Route path='gestion' element={<Gestion />} /> */}
-                        <Route path='agregararticulo' element={<AgregarArticulo />} />
-                    </Route>
+                    
+                    
                     <Route path='redirigir/' element={<Navigate to="/blogs" />} />
                     {/* <Route path='login/' element={<Login />} /> */}
                     <Route path='*' element={<NoPage />} />

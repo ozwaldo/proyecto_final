@@ -8,11 +8,8 @@ export const Layout = () => {
       <div className="layout">
         {/*Cabecera*/}
         <header className="header">
-          <div className="logo">
-            <div className="play"></div>
-          </div>
 
-          <h1>Blog</h1>
+          <h1>Proyecto</h1>
         </header>
 
         {/*Barra de navegación*/}
@@ -30,8 +27,8 @@ export const Layout = () => {
             {/* <li><NavLink to = '/contacto' 
                 className={({ isActive }) => (isActive ? "link-active" : "link")}>Contacto</NavLink></li> */}
 
-            <li><NavLink to='/panel'
-              className={({ isActive }) => (isActive ? "link-active" : "link")}>Panel de Control</NavLink></li>
+            <li><NavLink to='/blog'
+              className={({ isActive }) => (isActive ? "link-active" : "link")}>Blog</NavLink></li>
 
             <li><NavLink to='/usuario'
               className={({ isActive }) => (isActive ? "link-active" : "link")}>Usuario</NavLink></li>

@@ -62,7 +62,7 @@ body{
 
 .nav{
   grid-area: nav;
-  background: linear-gradient(90deg, #28c850 10%, #024530 100%);
+  background: linear-gradient(90deg, #368ebe 10%, #2a3755 100%);
 }
 
 .nav > ul {
@@ -95,7 +95,7 @@ body{
 
 .content{
   grid-area: content;
-  background: #f6f7f9;
+  background: #eee;
 
   display: flex;
   flex-flow: row wrap;
@@ -120,7 +120,7 @@ button,
 input[type="submit"],
 input[type="button"]{
   width: 100px;
-  background: #0b6030;
+  background: #04233b;
   color: white;
   border: 0;
   outline: 0;
@@ -204,6 +204,13 @@ input[type="button"]{
   color: #0b468a;
   text-decoration: none;
 }
+
+.agregarPost {
+  
+  width: 100px;
+}
+
+
 
 @media (max-width: 1085px){
   .content {

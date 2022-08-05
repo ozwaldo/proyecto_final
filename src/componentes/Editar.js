@@ -13,6 +13,7 @@ export const Editar = ({movie,listadoState,setListadoState,setEditarState}) => {
         let movieActualizada={
             id,
             titulo:target.titulo.value,
+            year:target.year.value,
             descripcion:target.descripcion.value
         }
         console.log(movie,movieActualizada);
@@ -27,11 +28,16 @@ export const Editar = ({movie,listadoState,setListadoState,setEditarState}) => {
     }
   return (
     <div>
-    <form onSubmit={e=>editarMovie(e,movie.id)} className='edit_form'>
+    <form onSubmit={e=>editarMovie(e,movie.id)} className = 'edit_form'>
         <input type="text"
                 className='editararticulo'
                 defaultValue={movie.titulo}
                 name='titulo'
+        />
+        <input type="text"
+                className='editararticulo'
+                defaultValue={movie.year}
+                name='year'
         />
         <input type="text"
                 className='editararticulo'

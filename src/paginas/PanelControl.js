@@ -3,7 +3,7 @@ import { NavLink, Outlet } from 'react-router-dom'
 
 export const PanelControl = () => {
   return (
-    <div>
+    <div className='content-panel'>
         <nav className='nav'>
             <ul>
                 <li><NavLink  to = 'iniciopanel' 
@@ -13,12 +13,10 @@ export const PanelControl = () => {
                 className={({ isActive }) => (isActive ? "link-active" : "link")}>gestion</NavLink></li> */}
         
                 <li><NavLink to = 'agregararticulo' 
-                className={({ isActive }) => (isActive ? "link-active" : "link")}>Agregar Articulos</NavLink></li>
+                className={({ isActive }) => (isActive ? "link-active" : "link")}>Agregar Post</NavLink></li>
             </ul>            
         </nav>
-        <div>
-            <Outlet></Outlet>
-        </div>
+            <Outlet />
     </div>
   )
 }

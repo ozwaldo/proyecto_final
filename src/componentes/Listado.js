@@ -37,6 +37,7 @@ export const Listado = () => {
                         return (
                             <article key={movie.id} className="peli-item">
                                 <h3 className="title">{movie.titulo}</h3>
+                                <h3 className="year">{movie.year}</h3>
                                 <p className="description">{movie.descripcion}</p>
 
                                 <button className="edit" onClick={() => setEditarState(movie.id)}>Editar</button>
